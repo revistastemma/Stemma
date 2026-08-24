@@ -655,26 +655,31 @@ em {
 .article-top {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 70px 40px 25px;
+    padding: 55px 40px 22px;
     border-bottom: 1px solid #d8d4cc;
 }
 
 .article-type {
-    margin: 0 0 8px;
+    margin: 0 0 7px;
+
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 10px;
+    font-weight: 600;
+
     text-transform: uppercase;
     letter-spacing: .16em;
+
     color: #9b2d30;
 }
 
 .article-issue {
     margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
+
     color: #777;
 }
-
 
 /* =========================================================
    DOS COLUMNAS
