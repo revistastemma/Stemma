@@ -641,132 +641,96 @@ em {
     }
 }
 /* =========================================================
-   PÁGINA DE ARTÍCULO ACADÉMICO
+   DISEÑO DE ARTÍCULOS ACADÉMICOS
    ========================================================= */
 
-
-/* CONTENEDOR GENERAL */
-
 .article-page {
+    width: 100%;
     background: #f7f5f0;
-    color: #202020;
-    padding-bottom: 100px;
 }
 
 
-/* =========================================================
-   ENCABEZADO DEL ARTÍCULO
-   ========================================================= */
+/* CABECERA DEL ARTÍCULO */
 
 .article-top {
-
     max-width: 1200px;
-
     margin: 0 auto;
-
     padding: 70px 40px 25px;
-
     border-bottom: 1px solid #d8d4cc;
 }
 
-
 .article-type {
-
     margin: 0 0 8px;
-
     font-family: Arial, Helvetica, sans-serif;
-
     font-size: 11px;
-
     text-transform: uppercase;
-
     letter-spacing: .16em;
-
     color: #9b2d30;
 }
 
-
 .article-issue {
-
     margin: 0;
-
     font-family: Arial, Helvetica, sans-serif;
-
     font-size: 13px;
-
     color: #777;
 }
 
 
 /* =========================================================
-   ESTRUCTURA DE DOS COLUMNAS
+   DOS COLUMNAS
    ========================================================= */
 
 .article-layout {
-
     max-width: 1200px;
-
     margin: 0 auto;
-
-    padding: 70px 40px 90px;
+    padding: 65px 40px 90px;
 
     display: grid;
 
-    grid-template-columns:
-        minmax(0, 1fr)
-        330px;
+    grid-template-columns: minmax(0, 1fr) 300px;
 
-    gap: 80px;
+    column-gap: 80px;
 
-    border-bottom: 1px solid #d8d4cc;
+    align-items: start;
 }
 
 
 /* =========================================================
-   COLUMNA PRINCIPAL
+   COLUMNA IZQUIERDA
    ========================================================= */
 
 .article-main {
-
     min-width: 0;
 }
 
-
 .article-main h1 {
+    margin: 0 0 35px;
 
-    margin: 0 0 45px;
-
-    max-width: 850px;
+    max-width: 760px;
 
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size: clamp(42px, 5vw, 68px);
+    font-size: 48px !important;
 
     font-weight: normal;
 
-    line-height: 1.08;
+    line-height: 1.12;
 
-    letter-spacing: -.025em;
+    letter-spacing: -0.015em;
 }
 
 
-.article-main h1 em {
-    font-style: italic;
-}
-
-
-/* =========================================================
-   AUTOR
-   ========================================================= */
+/* AUTOR */
 
 .article-author {
+    max-width: 700px;
+
+    padding-top: 20px;
 
     border-top: 1px solid #d8d4cc;
-
-    padding-top: 25px;
 
     font-family: Arial, Helvetica, sans-serif;
 
@@ -777,50 +741,225 @@ em {
     color: #666;
 }
 
-
 .article-author p {
-
     margin: 0 0 3px;
-
 }
 
-
 .article-author .author-name {
-
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size: 18px;
+    font-size: 19px;
 
     color: #202020;
 }
 
-
 .article-author a {
+    color: #9b2d30;
+}
+
+
+/* RESUMEN */
+
+.article-abstract {
+    max-width: 760px;
+    margin-top: 65px;
+}
+
+.article-abstract h2 {
+    margin: 0 0 18px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: normal;
+
+    text-transform: uppercase;
+
+    letter-spacing: .14em;
 
     color: #9b2d30;
+}
 
+.article-abstract > p {
+    margin: 0 0 25px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* PALABRAS CLAVE */
+
+.article-keywords {
+    padding-top: 20px;
+
+    border-top: 1px solid #d8d4cc;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px !important;
+
+    line-height: 1.7 !important;
+
+    color: #666;
 }
 
 
 /* =========================================================
-   RESUMEN
+   PDF
    ========================================================= */
 
-.article-abstract {
+.article-pdf {
+    margin-top: 40px;
+}
 
-    margin-top: 70px;
+.pdf-button {
+    display: inline-block;
 
-    max-width: 780px;
+    padding: 13px 21px;
+
+    background: #9b2d30;
+
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .06em;
+
+    transition: background .2s;
+}
+
+.pdf-button:hover {
+    background: #762225;
 }
 
 
-.article-abstract h2,
-.article-sidebar h2,
+/* =========================================================
+   COLUMNA DERECHA
+   ========================================================= */
+
+.article-sidebar {
+
+    border-left: 1px solid #d8d4cc;
+
+    padding-left: 35px;
+
+    align-self: stretch;
+}
+
+
+.sidebar-block {
+
+    margin: 0 0 28px;
+
+    padding: 0 0 28px;
+
+    border-bottom: 1px solid #d8d4cc;
+}
+
+.sidebar-block:last-child {
+    border-bottom: none;
+}
+
+
+.article-sidebar h2 {
+
+    margin: 0 0 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: normal;
+
+    text-transform: uppercase;
+
+    letter-spacing: .13em;
+
+    color: #9b2d30;
+}
+
+
+.sidebar-block p {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+.sidebar-block .pending {
+    color: #888;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   DESCARGAS
+   ========================================================= */
+
+.downloads {
+    padding-bottom: 0;
+}
+
+.download-number {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif !important;
+
+    font-size: 32px !important;
+
+    line-height: 1 !important;
+
+    color: #202020 !important;
+}
+
+
+/* =========================================================
+   INFORMACIÓN INFERIOR
+   ========================================================= */
+
+.article-extra {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 65px 40px 100px;
+
+    border-top: 1px solid #d8d4cc;
+}
+
+
+.extra-block {
+
+    max-width: 760px;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid #d8d4cc;
+}
+
+
 .article-extra h2 {
 
     margin: 0 0 20px;
@@ -839,195 +978,6 @@ em {
 }
 
 
-.article-abstract > p {
-
-    margin: 0 0 25px;
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-.article-keywords {
-
-    padding-top: 22px;
-
-    border-top: 1px solid #d8d4cc;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 13px !important;
-
-    line-height: 1.7 !important;
-
-    color: #666;
-}
-
-
-.article-keywords strong {
-
-    color: #333;
-
-}
-
-
-/* =========================================================
-   BOTÓN PDF
-   ========================================================= */
-
-.article-pdf {
-
-    margin-top: 45px;
-}
-
-
-.pdf-button {
-
-    display: inline-block;
-
-    padding: 13px 21px;
-
-    background: #9b2d30;
-
-    color: white;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 12px;
-
-    text-transform: uppercase;
-
-    letter-spacing: .06em;
-
-    transition: background .2s;
-}
-
-
-.pdf-button:hover {
-
-    background: #762225;
-
-}
-
-
-/* =========================================================
-   COLUMNA LATERAL
-   ========================================================= */
-
-.article-sidebar {
-
-    border-left: 1px solid #d8d4cc;
-
-    padding-left: 40px;
-}
-
-
-.sidebar-block {
-
-    padding-bottom: 30px;
-
-    margin-bottom: 30px;
-
-    border-bottom: 1px solid #d8d4cc;
-}
-
-
-.sidebar-block:last-child {
-
-    margin-bottom: 0;
-
-}
-
-
-.sidebar-block p {
-
-    margin: 0;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 13px;
-
-    line-height: 1.7;
-
-    color: #555;
-}
-
-
-.sidebar-block h2 {
-
-    margin-bottom: 12px;
-
-}
-
-
-.sidebar-block .pending {
-
-    color: #888;
-
-    font-style: italic;
-
-}
-
-
-.citation-format {
-
-    color: #888 !important;
-
-}
-
-
-/* =========================================================
-   MÉTRICA DE DESCARGAS
-   ========================================================= */
-
-.downloads {
-
-    padding-bottom: 35px;
-
-}
-
-
-.download-number {
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif !important;
-
-    font-size: 32px !important;
-
-    line-height: 1 !important;
-
-    color: #202020 !important;
-
-}
-
-
-/* =========================================================
-   INFORMACIÓN INFERIOR
-   ========================================================= */
-
-.article-extra {
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    padding: 70px 40px 0;
-}
-
-
-.extra-block {
-
-    max-width: 760px;
-
-    padding: 35px 0;
-
-    border-bottom: 1px solid #d8d4cc;
-}
-
-
 .extra-block p {
 
     margin: 0;
@@ -1041,13 +991,6 @@ em {
 /* =========================================================
    REFERENCIAS
    ========================================================= */
-
-.references {
-
-    margin-top: 10px;
-
-}
-
 
 .references p {
 
@@ -1064,64 +1007,46 @@ em {
 
 
 /* =========================================================
-   MÓVILES
+   MÓVIL
    ========================================================= */
 
 @media (max-width: 850px) {
 
-
     .article-top {
-
-        padding:
-            55px
-            20px
-            20px;
-
+        padding: 55px 20px 20px;
     }
-
 
     .article-layout {
 
         display: block;
 
-        padding:
-            55px
-            20px
-            65px;
-
+        padding: 55px 20px 70px;
     }
-
 
     .article-main h1 {
 
-        font-size: 40px;
+        font-size: 38px !important;
 
         line-height: 1.12;
-
     }
-
 
     .article-sidebar {
 
-        margin-top: 60px;
+        margin-top: 65px;
 
-        padding-top: 45px;
+        padding-top: 40px;
 
         padding-left: 0;
 
         border-left: none;
 
         border-top: 1px solid #d8d4cc;
-
     }
-
 
     .article-extra {
 
         padding-left: 20px;
 
         padding-right: 20px;
-
     }
-
 }
