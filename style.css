@@ -640,3 +640,274 @@ em {
         font-size: 15px;
     }
 }
+/* ==================================================
+   PÁGINA DE ARTÍCULO ACADÉMICO
+   ================================================== */
+
+.academic-article {
+    background: #f7f5f0;
+    padding-bottom: 100px;
+}
+
+
+/* CABECERA DEL ARTÍCULO */
+
+.academic-header {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 100px 40px 70px;
+    border-bottom: 1px solid #d8d4cc;
+}
+
+.academic-section {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11px;
+    color: #9b2d30;
+    margin-bottom: 12px;
+}
+
+.academic-issue {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 45px;
+}
+
+
+.academic-header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    margin-bottom: 38px;
+}
+
+
+.academic-author {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+.academic-author p {
+    margin-bottom: 3px;
+}
+
+
+.academic-author strong {
+    color: #202020;
+    font-size: 16px;
+}
+
+
+.academic-author a {
+    color: #9b2d30;
+}
+
+
+/* RESUMEN */
+
+.academic-abstract {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 65px 40px 55px;
+}
+
+
+.academic-abstract h2,
+.academic-author-note h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 11px;
+    font-weight: normal;
+    color: #9b2d30;
+    margin-bottom: 25px;
+}
+
+
+.academic-abstract > p {
+    max-width: 760px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+.academic-keywords {
+    margin-top: 28px;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+
+.academic-keywords strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+
+/* METADATOS */
+
+.academic-meta {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 40px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+.academic-meta p {
+    margin-bottom: 8px;
+}
+
+
+.academic-meta strong {
+    color: #333;
+}
+
+
+/* PDF */
+
+.academic-pdf {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 40px 70px;
+}
+
+
+.academic-pdf-button {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid #9b2d30;
+    color: #9b2d30;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    transition: 0.2s;
+}
+
+
+.academic-pdf-button:hover {
+    background: #9b2d30;
+    color: white;
+}
+
+
+/* CUERPO DEL ARTÍCULO */
+
+.academic-text {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 10px 40px 80px;
+}
+
+
+.academic-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+
+.academic-text p {
+    font-size: 17px;
+    line-height: 1.85;
+    margin-bottom: 25px;
+}
+
+
+.academic-text em {
+    font-style: italic;
+}
+
+
+/* REFERENCIAS */
+
+.academic-references {
+    margin-top: 35px;
+}
+
+
+.academic-references p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    padding-left: 30px;
+    text-indent: -30px;
+}
+
+
+/* BIOGRAFÍA */
+
+.academic-author-note {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 70px 40px 0;
+    border-top: 1px solid #d8d4cc;
+}
+
+
+.academic-author-note p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+
+/* ==================================================
+   RESPONSIVE
+   ================================================== */
+
+@media (max-width: 750px) {
+
+    .academic-header {
+        padding: 65px 20px 50px;
+    }
+
+
+    .academic-header h1 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+
+    .academic-abstract,
+    .academic-meta,
+    .academic-pdf,
+    .academic-text,
+    .academic-author-note {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .academic-abstract {
+        padding-top: 50px;
+    }
+
+
+    .academic-text {
+        padding-top: 0;
+    }
+
+
+    .academic-text p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+}
