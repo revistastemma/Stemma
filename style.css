@@ -685,24 +685,6 @@ em {
    DOS COLUMNAS
    ========================================================= */
 
-.article-layout {
-    max-width: 1200px;
-   
-    margin: 0 auto;
-   
-    padding: 65px 40px 90px;
-
-    display: grid;
-
-    grid-template-columns: minmax(0, 1fr) 300px;
-
-    column-gap: 80px;
-
-    align-items: start;
-   
-    overflow: visible;
-}
-
 
 /* =========================================================
    COLUMNA IZQUIERDA
@@ -711,26 +693,6 @@ em {
 .article-main {
     min-width: 0;
 }
-
-.article-main h1 {
-    margin: 0 0 35px;
-
-    max-width: 760px;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 48px !important;
-
-    font-weight: normal;
-
-    line-height: 1.12;
-
-    letter-spacing: -0.015em;
-}
-
 
 /* AUTOR */
 
@@ -857,29 +819,6 @@ em {
 /* =========================================================
    COLUMNA DERECHA
    ========================================================= */
-
-.article-sidebar {
-
-    border-left: 1px solid #bdb8ae;
-
-    padding-left: 42px;
-
-    align-self: start;
-
-    position: sticky;
-
-    top: 30px;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: #E9E3D7;
-
-    padding-top: 32px;
-
-    padding-right: 32px;
-
-    padding-bottom: 5px;
-}
 
 
 .sidebar-block {
@@ -1189,7 +1128,7 @@ em {
         "Times New Roman",
         serif;
 
-    font-size: 50px !important;
+    font-size: 46px !important;
 
     font-weight: normal;
 
@@ -1356,7 +1295,7 @@ em {
 
     padding: 34px 32px 5px;
 
-    background: #e5e1d8;
+    background: #E9E3D7;
 
     border-left: 4px solid #9b2d30;
 
