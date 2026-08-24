@@ -156,7 +156,42 @@ em {
 /* =========================
    TÍTULO DE ARTÍCULO
    ========================= */
+.article-header {
+    background: #f7f5f0;
+    border-bottom: 1px solid #d8d4cc;
+}
 
+.article-header-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 110px 40px 100px;
+}
+
+.article-header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: normal;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    max-width: 900px;
+    margin-bottom: 45px;
+}
+
+.article-author {
+    border-top: 1px solid #d8d4cc;
+    padding-top: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-author p {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.article-author p:first-child {
+    font-weight: 600;
+    font-size: 16px;
+}
 /*
    En las páginas de artículos el título
    necesita una escala diferente a la de
@@ -544,7 +579,15 @@ em {
     .article-title h1 {
         font-size: 40px;
     }
+   
+    .article-header-content {
+        padding: 70px 20px;
+    }
 
+    .article-header h1 {
+        font-size: 40px;
+    }
+   
     .section {
         display: block;
         padding: 70px 20px;
