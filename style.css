@@ -94,10 +94,13 @@ em {
 
 .main-nav a {
     color: #f7f5f0;
+    text-decoration: none;
 }
 
 .main-nav a:hover {
-    color: #eadfd4;
+    color: #f7f5f0;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 /* =========================
