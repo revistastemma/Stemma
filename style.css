@@ -687,7 +687,9 @@ em {
 
 .article-layout {
     max-width: 1200px;
+   
     margin: 0 auto;
+   
     padding: 65px 40px 90px;
 
     display: grid;
@@ -697,6 +699,8 @@ em {
     column-gap: 80px;
 
     align-items: start;
+   
+    overflow: visible;
 }
 
 
