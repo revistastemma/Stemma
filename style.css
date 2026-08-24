@@ -947,7 +947,7 @@ em {
 
     display: block;
 
-    margin-top: 5px;
+    margin-top: 6px;
 
     font-family:
         Georgia,
@@ -959,6 +959,7 @@ em {
     line-height: 1;
 
     color: #202020 !important;
+
 }
 
 
@@ -1120,4 +1121,16 @@ em {
 
         padding-right: 20px;
     }
+}
+
+/* =========================
+   FORMATOS DE CITA
+   ========================= */
+
+.citation-format {
+    color: #888 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px !important;
+    font-style: italic;
+    line-height: 1.6;
 }
