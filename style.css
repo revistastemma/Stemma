@@ -169,13 +169,12 @@ em {
 
 .article-header h1 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(42px, 5vw, 68px);
+    font-size: clamp(40px, 4.5vw, 62px);
     font-weight: normal;
     line-height: 1.1;
     letter-spacing: -0.02em;
     max-width: 900px;
     margin-bottom: 45px;
-    font-size: 45px !important;
 }
 
 .article-author {
