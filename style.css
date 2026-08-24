@@ -858,15 +858,19 @@ em {
 
     border-left: 1px solid #d8d4cc;
 
-    padding-left: 35px;
+    padding-left: 40px;
 
-    align-self: stretch;
+    align-self: start;
+
+    position: sticky;
+
+    top: 30px;
 }
 
 
 .sidebar-block {
 
-    margin: 0 0 28px;
+    margin: 0 0 32px;
 
     padding: 0 0 28px;
 
@@ -880,17 +884,17 @@ em {
 
 .article-sidebar h2 {
 
-    margin: 0 0 10px;
+    margin: 0 0 11px;
 
     font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 11px;
+    font-size: 10px;
 
-    font-weight: normal;
+    font-weight: 600;
 
     text-transform: uppercase;
 
-    letter-spacing: .13em;
+    letter-spacing: .15em;
 
     color: #9b2d30;
 }
@@ -911,7 +915,9 @@ em {
 
 
 .sidebar-block .pending {
-    color: #888;
+
+    color: #777;
+
     font-style: italic;
 }
 
@@ -926,14 +932,18 @@ em {
 
 .download-number {
 
+    display: block;
+
+    margin-top: 5px;
+
     font-family:
         Georgia,
         "Times New Roman",
-        serif !important;
+        serif;
 
-    font-size: 32px !important;
+    font-size: 34px !important;
 
-    line-height: 1 !important;
+    line-height: 1;
 
     color: #202020 !important;
 }
