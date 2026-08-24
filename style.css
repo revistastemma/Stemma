@@ -1154,3 +1154,434 @@ em {
     font-style: italic;
     line-height: 1.6;
 }
+/* =========================================================
+   FICHA EDITORIAL — VERSIÓN FINAL
+   ========================================================= */
+
+.article-layout {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 75px 50px 100px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    column-gap: 90px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   COLUMNA PRINCIPAL
+   ========================================================= */
+
+.article-main {
+    max-width: 780px;
+}
+
+.article-main h1 {
+    max-width: 760px;
+
+    margin: 0 0 38px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 50px !important;
+
+    font-weight: normal;
+
+    line-height: 1.12;
+
+    letter-spacing: -0.018em;
+
+    color: #202020;
+}
+
+
+/* AUTOR */
+
+.article-author {
+    max-width: 700px;
+
+    padding: 20px 0 0;
+
+    border-top: 1px solid #cfcac1;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #666;
+}
+
+.article-author .author-name {
+    margin-bottom: 6px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 21px;
+
+    color: #202020;
+}
+
+
+/* =========================================================
+   RESUMEN
+   ========================================================= */
+
+.article-abstract {
+    max-width: 760px;
+
+    margin-top: 70px;
+}
+
+.article-abstract h2 {
+
+    margin: 0 0 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .16em;
+
+    color: #9b2d30;
+}
+
+.article-abstract > p {
+
+    margin: 0 0 30px;
+
+    font-size: 17px;
+
+    line-height: 1.85;
+
+    color: #303030;
+}
+
+
+/* =========================================================
+   PALABRAS CLAVE
+   ========================================================= */
+
+.article-keywords {
+
+    padding-top: 22px;
+
+    border-top: 1px solid #cfcac1;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px !important;
+
+    line-height: 1.7 !important;
+
+    color: #666;
+}
+
+.article-keywords strong {
+    color: #202020;
+}
+
+
+/* =========================================================
+   PDF
+   ========================================================= */
+
+.article-pdf {
+
+    margin-top: 45px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #cfcac1;
+}
+
+.pdf-button {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #9b2d30;
+
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: .09em;
+
+    transition:
+        background .2s,
+        transform .2s;
+}
+
+.pdf-button:hover {
+
+    background: #762225;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   COLUMNA DERECHA — FICHA EDITORIAL
+   ========================================================= */
+
+.article-sidebar {
+
+    position: sticky;
+
+    top: 30px;
+
+    align-self: start;
+
+    padding: 34px 32px 5px;
+
+    background: #e5e1d8;
+
+    border-left: 4px solid #9b2d30;
+
+    box-shadow:
+        0 1px 0 rgba(0,0,0,.04);
+
+}
+
+
+/* BLOQUES */
+
+.sidebar-block {
+
+    margin: 0;
+
+    padding: 0 0 25px;
+
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #c3beb5;
+}
+
+.sidebar-block:last-child {
+
+    margin-bottom: 0;
+
+    border-bottom: none;
+}
+
+
+/* TÍTULOS */
+
+.article-sidebar h2 {
+
+    margin: 0 0 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .17em;
+
+    color: #9b2d30;
+}
+
+
+/* TEXTO */
+
+.sidebar-block p {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* TEXTO PENDIENTE */
+
+.sidebar-block .pending {
+
+    color: #777;
+
+    font-style: italic;
+}
+
+
+/* ENLACES */
+
+.article-sidebar a {
+
+    color: #9b2d30;
+
+    text-decoration: none;
+}
+
+.article-sidebar a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* DESCARGAS */
+
+.downloads {
+
+    padding-bottom: 20px;
+}
+
+.download-number {
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 38px !important;
+
+    line-height: 1;
+
+    color: #202020 !important;
+}
+
+
+/* =========================================================
+   INFORMACIÓN INFERIOR
+   ========================================================= */
+
+.article-extra {
+
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 0 50px 110px;
+
+    border-top: 1px solid #cfcac1;
+}
+
+
+.extra-block {
+
+    max-width: 780px;
+
+    padding: 55px 0;
+
+    border-bottom: 1px solid #d8d4cc;
+}
+
+
+.article-extra h2 {
+
+    margin: 0 0 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .16em;
+
+    color: #9b2d30;
+}
+
+
+.extra-block p {
+
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+
+    color: #333;
+}
+
+
+/* =========================================================
+   REFERENCIAS
+   ========================================================= */
+
+.references p {
+
+    margin-bottom: 20px;
+
+    padding-left: 32px;
+
+    text-indent: -32px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .article-layout {
+
+        display: block;
+
+        padding: 55px 20px 70px;
+    }
+
+    .article-main h1 {
+
+        font-size: 40px !important;
+    }
+
+    .article-sidebar {
+
+        position: static;
+
+        margin-top: 65px;
+
+        padding: 32px 25px;
+
+        border-left: 4px solid #9b2d30;
+
+    }
+
+    .article-extra {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+}
