@@ -120,19 +120,15 @@ em {
 
 .dropdown-menu {
     display: none;
-
     position: absolute;
-
     top: 100%;
     left: -20px;
-
     width: 240px;
-
     padding: 10px 0;
 
-    background: #f7f5f0;
+    background: rgba(245, 240, 228, 0.94);
 
-    border: 1px solid #d8d4cc;
+    border: 1px solid rgba(216, 212, 204, 0.8);
 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 
