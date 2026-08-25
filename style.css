@@ -118,34 +118,39 @@ em {
     display: none;
 
     position: absolute;
-    top: 100%;
-    left: -18px;
 
-    min-width: 230px;
+    top: 28px;
+    left: -20px;
 
-    padding: 12px 0;
+    width: 240px;
+
+    padding: 10px 0;
 
     background: #f7f5f0;
 
     border: 1px solid #d8d4cc;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
 
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .dropdown-menu a {
     display: block;
 
-    padding: 10px 20px;
+    width: 100%;
 
-    color: #333 !important;
+    padding: 11px 20px;
+
+    color: #202020 !important;
 
     font-family: Arial, Helvetica, sans-serif;
 
     font-size: 12px;
 
-    letter-spacing: .02em;
+    line-height: 1.4;
+
+    letter-spacing: 0;
 
     white-space: nowrap;
 }
@@ -154,6 +159,8 @@ em {
     background: #ebe8e1;
 
     color: #9b2d30 !important;
+
+    text-decoration: none;
 }
 
 .nav-dropdown:hover .dropdown-menu {
