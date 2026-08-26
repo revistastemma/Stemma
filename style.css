@@ -1779,12 +1779,14 @@ em {
 }
 
 .issue-page .article-item h3 {
-    margin: 0 0 12px;
+    margin-bottom: 12px;
 
     font-family: Georgia, "Times New Roman", serif;
     font-size: 22px;
     font-weight: normal;
     line-height: 1.3;
+
+    min-height: 114.4px;
 }
 
 .issue-page .publication-author {
