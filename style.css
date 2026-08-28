@@ -1747,6 +1747,9 @@ em {
     column-gap: 45px;
     align-items: start;
 }
+.reviews-grid {
+    display: block;
+}
 
 /* MÓVIL */
 
