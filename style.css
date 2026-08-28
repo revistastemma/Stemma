@@ -2066,3 +2066,39 @@ em {
         margin-top: 65px;
     }
 }
+
+/* =========================================================
+   RESEÑAS — PORTADA A LA IZQUIERDA
+   ========================================================= */
+
+.issue-page .review-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.issue-page .review-cover {
+    width: 150px;
+}
+
+.issue-page .review-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.issue-page .review-content {
+    min-width: 0;
+}
+
+@media (max-width: 650px) {
+    .issue-page .review-item {
+        display: block;
+    }
+
+    .issue-page .review-cover {
+        width: 130px;
+        margin-bottom: 25px;
+    }
+}
