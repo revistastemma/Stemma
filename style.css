@@ -1749,7 +1749,7 @@ em {
 }
 
 /* =========================================================
-   RESEÑAS — UNA SOLA COLUMNA
+   RESEÑAS — PORTADA + INFORMACIÓN
    ========================================================= */
 
 .reviews-grid {
@@ -1757,7 +1757,53 @@ em {
 }
 
 .reviews-grid .article-item {
-    max-width: 780px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 35px;
+
+    max-width: 900px;
+
+    padding: 35px 0;
+    border-top: 1px solid #d8d4cc;
+}
+
+/* PORTADA */
+
+.reviews-grid .review-cover {
+    grid-column: 1;
+    grid-row: 1 / span 5;
+
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* INFORMACIÓN */
+
+.reviews-grid .article-item > .publication-number,
+.reviews-grid .article-item > h3,
+.reviews-grid .article-item > .publication-author,
+.reviews-grid .article-item > p,
+.reviews-grid .article-item > .text-link {
+    grid-column: 2;
+}
+
+.reviews-grid .article-item h3 {
+    margin-top: 0;
+}
+
+/* MÓVIL */
+
+@media (max-width: 650px) {
+
+    .reviews-grid .article-item {
+        display: block;
+    }
+
+    .reviews-grid .review-cover {
+        width: 130px;
+        margin-bottom: 25px;
+    }
 }
  /* =========================================================
    RESEÑAS — PORTADAS
