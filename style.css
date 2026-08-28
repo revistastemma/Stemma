@@ -1748,39 +1748,6 @@ em {
     align-items: start;
 }
 
-/* =========================================================
-   RESEÑAS
-   ========================================================= */
-
-.reviews-grid {
-    display: block;
-}
-
-.review-item {
-    display: grid !important;
-    grid-template-columns: 150px minmax(0, 1fr);
-    gap: 35px;
-
-    max-width: 900px !important;
-    padding: 35px 0;
-    border-top: 1px solid #d8d4cc;
-}
-
-.review-cover {
-    grid-column: 1;
-    width: 150px;
-}
-
-.review-cover img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.review-content {
-    grid-column: 2;
-}
-
 /* MÓVIL */
 
 @media (max-width: 650px) {
