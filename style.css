@@ -1960,10 +1960,10 @@ em {
    ========================================================= */
 
 .issue-page .review-item {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 35px;
-    align-items: start;
+    display: grid !important;
+    grid-template-columns: 150px 1fr !important;
+    gap: 35px !important;
+    align-items: start !important;
 }
 
 .issue-page .review-cover {
