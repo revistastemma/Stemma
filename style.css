@@ -1759,7 +1759,50 @@ em {
 .reviews-grid .article-item {
     max-width: 780px;
 }
+ /* =========================================================
+   RESEÑAS — PORTADAS
+   ========================================================= */
 
+.review-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 30px;
+
+    max-width: 900px;
+    padding: 35px 0;
+    border-top: 1px solid #d8d4cc;
+}
+
+.review-item:first-child {
+    border-top: none;
+}
+
+.review-cover {
+    width: 150px;
+}
+
+.review-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.review-content {
+    min-width: 0;
+}
+
+@media (max-width: 650px) {
+
+    .review-item {
+        grid-template-columns: 100px 1fr;
+        column-gap: 20px;
+    }
+
+    .review-cover {
+        width: 100px;
+    }
+}
 
 /* =========================================================
    TRABAJOS
