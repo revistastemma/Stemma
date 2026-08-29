@@ -2306,3 +2306,28 @@ em {
     }
 
 }
+/* Ajuste final: Envíos sin numeración y a ancho completo */
+
+.article-page .section {
+    grid-template-columns: 1fr;
+}
+
+.section-label {
+    display: none;
+}
+
+.article-page {
+    width: calc(100% - 80px);
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-page .section-content {
+    width: 100%;
+    text-align: justify;
+}
+
+.article-page .section-content p {
+    text-align: justify;
+}
