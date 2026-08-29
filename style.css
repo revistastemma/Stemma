@@ -1990,3 +1990,235 @@ em {
         margin-bottom: 25px;
     }
 }
+/* =========================================================
+   PÁGINA DE ENVÍOS — STEMMA
+   ========================================================= */
+
+/* CONTENIDO GENERAL */
+
+.article-page {
+    background: #f7f5f0;
+}
+
+
+/* LISTA DE COMPROBACIÓN */
+
+.submission-list {
+    margin: 30px 0 35px;
+    padding-left: 28px;
+}
+
+.submission-list li {
+    margin-bottom: 14px;
+    padding-left: 8px;
+
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.submission-list li::marker {
+    color: #9b2d30;
+}
+
+
+/* BLOQUES INTERNOS */
+
+.extra-block {
+    max-width: 760px;
+
+    margin-top: 50px;
+    padding-top: 35px;
+
+    border-top: 1px solid #d8d4cc;
+    border-bottom: none;
+}
+
+.extra-block h3 {
+    margin: 0 0 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1.25;
+
+    color: #202020;
+}
+
+.extra-block h4 {
+    margin: 32px 0 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #9b2d30;
+}
+
+.extra-block p {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #303030;
+}
+
+
+/* TABLA DE EXTENSIONES */
+
+.submission-table-wrapper {
+    width: 100%;
+    margin: 35px 0 40px;
+
+    overflow-x: auto;
+}
+
+.submission-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.submission-table th {
+    padding: 15px 18px;
+
+    background: #ebe8e1;
+
+    border-top: 2px solid #9b2d30;
+    border-bottom: 1px solid #cfcac1;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: .08em;
+
+    text-align: left;
+}
+
+.submission-table td {
+    padding: 16px 18px;
+
+    border-bottom: 1px solid #d8d4cc;
+
+    vertical-align: top;
+}
+
+.submission-table tbody tr:last-child td {
+    border-bottom: 2px solid #cfcac1;
+}
+
+.submission-table td:last-child,
+.submission-table th:last-child {
+    width: 180px;
+}
+
+
+/* BLOQUES DE EJEMPLOS Y CITAS */
+
+.citation {
+    margin: 28px 0;
+
+    padding: 25px 28px;
+
+    background: #ebe8e1;
+
+    border-left: 3px solid #9b2d30;
+
+    font-size: 16px;
+    line-height: 1.75;
+
+    color: #303030;
+}
+
+
+/* ENLACES DENTRO DEL TEXTO */
+
+.text-link {
+    color: #9b2d30;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
+/* PÁRRAFOS DE LA PÁGINA DE ENVÍOS */
+
+.article-page .section-content > p {
+    max-width: 760px;
+
+    margin-bottom: 22px;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* SUBTÍTULOS 4.1 / 4.2 / 4.3 */
+
+.article-page .section-content > .extra-block h3 {
+    font-size: 28px;
+}
+
+.article-page .section-content > .extra-block h4 {
+    margin-top: 30px;
+}
+
+
+/* SECCIÓN DE REFERENCIAS */
+
+.article-page .extra-block:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE — ENVÍOS
+   ========================================================= */
+
+@media (max-width: 750px) {
+
+    .submission-list {
+        padding-left: 24px;
+    }
+
+    .submission-list li {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .extra-block {
+        margin-top: 40px;
+        padding-top: 30px;
+    }
+
+    .extra-block h3 {
+        font-size: 25px;
+    }
+
+    .extra-block h4 {
+        font-size: 13px;
+    }
+
+    .extra-block p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .submission-table {
+        min-width: 550px;
+    }
+
+    .citation {
+        padding: 20px 22px;
+        font-size: 15px;
+    }
+
+}
