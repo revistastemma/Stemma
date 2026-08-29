@@ -2325,3 +2325,20 @@ em {
 .article-page .section-content > p {
     text-align: justify;
 }
+
+.extra-block h4 {
+    color: #9b2d30;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.extra-block h4.reference-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2.4rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid #d8c8c0;
+}
