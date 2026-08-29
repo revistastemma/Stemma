@@ -1991,50 +1991,68 @@ em {
     }
 }
 /* =========================================================
-   PÁGINA DE ENVÍOS — STEMMA
+   ENVÍOS — ESTILOS ESPECÍFICOS
    ========================================================= */
 
-/* CONTENIDO GENERAL */
+/* Contenido general de Envíos */
 
 .article-page {
     background: #f7f5f0;
 }
 
 
-/* LISTA DE COMPROBACIÓN */
+/* Texto principal */
 
-.submission-list {
-    margin: 30px 0 35px;
+.article-page .section-content {
+    max-width: 760px;
+}
+
+.article-page .section-content > p {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LISTA DE COMPROBACIÓN
+   ========================================================= */
+
+.article-page .submission-list {
+    margin: 28px 0 35px;
     padding-left: 28px;
 }
 
-.submission-list li {
-    margin-bottom: 14px;
-    padding-left: 8px;
+.article-page .submission-list li {
+    margin-bottom: 13px;
+    padding-left: 7px;
 
     font-size: 16px;
     line-height: 1.75;
 }
 
-.submission-list li::marker {
+.article-page .submission-list li::marker {
     color: #9b2d30;
 }
 
 
-/* BLOQUES INTERNOS */
+/* =========================================================
+   BLOQUES 3.1 / 3.2 / 3.3 / 3.4
+   Y 4.1 / 4.2 / 4.3
+   ========================================================= */
 
-.extra-block {
+.article-page .extra-block {
     max-width: 760px;
 
-    margin-top: 50px;
-    padding-top: 35px;
+    margin-top: 45px;
+    padding: 35px 0 0;
 
     border-top: 1px solid #d8d4cc;
     border-bottom: none;
 }
 
-.extra-block h3 {
-    margin: 0 0 25px;
+.article-page .extra-block h3 {
+    margin: 0 0 24px;
 
     font-family: Georgia, "Times New Roman", serif;
     font-size: 28px;
@@ -2044,19 +2062,21 @@ em {
     color: #202020;
 }
 
-.extra-block h4 {
-    margin: 32px 0 12px;
+.article-page .extra-block h4 {
+    margin: 30px 0 12px;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
 
     color: #9b2d30;
 }
 
-.extra-block p {
+.article-page .extra-block p {
     margin-bottom: 20px;
 
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 16px;
     line-height: 1.8;
 
@@ -2064,43 +2084,43 @@ em {
 }
 
 
-/* TABLA DE EXTENSIONES */
+/* =========================================================
+   TABLA
+   ========================================================= */
 
-.submission-table-wrapper {
+.article-page .submission-table-wrapper {
     width: 100%;
     margin: 35px 0 40px;
 
     overflow-x: auto;
 }
 
-.submission-table {
+.article-page .submission-table {
     width: 100%;
 
     border-collapse: collapse;
 
-    font-size: 15px;
-    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
-.submission-table th {
-    padding: 15px 18px;
+.article-page .submission-table th {
+    padding: 14px 18px;
 
     background: #ebe8e1;
 
     border-top: 2px solid #9b2d30;
-    border-bottom: 1px solid #cfcac1;
+    border-bottom: 1px solid #d0cbc2;
 
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     font-weight: 700;
 
+    text-align: left;
     text-transform: uppercase;
     letter-spacing: .08em;
-
-    text-align: left;
 }
 
-.submission-table td {
+.article-page .submission-table td {
     padding: 16px 18px;
 
     border-bottom: 1px solid #d8d4cc;
@@ -2108,22 +2128,24 @@ em {
     vertical-align: top;
 }
 
-.submission-table tbody tr:last-child td {
+.article-page .submission-table tr:last-child td {
     border-bottom: 2px solid #cfcac1;
 }
 
-.submission-table td:last-child,
-.submission-table th:last-child {
+.article-page .submission-table th:last-child,
+.article-page .submission-table td:last-child {
     width: 180px;
 }
 
 
-/* BLOQUES DE EJEMPLOS Y CITAS */
+/* =========================================================
+   BLOQUES DE EJEMPLO / CITAS
+   ========================================================= */
 
-.citation {
+.article-page .citation {
     margin: 28px 0;
 
-    padding: 25px 28px;
+    padding: 22px 25px;
 
     background: #ebe8e1;
 
@@ -2136,20 +2158,82 @@ em {
 }
 
 
-/* ENLACES DENTRO DEL TEXTO */
+/* =========================================================
+   ENLACES
+   ========================================================= */
 
-.text-link {
+.article-page .text-link {
     color: #9b2d30;
     text-decoration: none;
 }
 
-.text-link:hover {
+.article-page .text-link:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
 
-/* PÁRRAFOS DE LA PÁGINA DE ENVÍOS */
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .article-page .section {
+        display: block;
+
+        padding: 65px 25px;
+    }
+
+    .article-page .section-label {
+        margin-bottom: 25px;
+    }
+
+    .article-page .section-content {
+        max-width: none;
+    }
+
+    .article-page .section h2 {
+        font-size: 32px;
+    }
+
+    .article-page .extra-block {
+        margin-top: 40px;
+    }
+
+    .article-page .extra-block h3 {
+        font-size: 25px;
+    }
+
+    .article-page .submission-table {
+        min-width: 550px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .article-page .section {
+        padding: 50px 20px;
+    }
+
+    .article-page .section h2 {
+        font-size: 29px;
+    }
+
+    .article-page .section-content > p,
+    .article-page .extra-block p,
+    .article-page .submission-list li {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .article-page .citation {
+        padding: 18px 20px;
+        font-size: 15px;
+    }
+
+}A DE ENVÍOS */
 
 .article-page .section-content > p {
     max-width: 760px;
