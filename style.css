@@ -2310,18 +2310,6 @@ em {
    AJUSTE FINAL — ENVÍOS
    ========================================================= */
 
-.article-page .section {
-    grid-template-columns: 1fr;
-}
-
-.article-page .section-label {
-    display: none;
-}
-
-.article-page .section-content {
-    max-width: 760px;
-}
-
 .article-page .section-content > p {
     text-align: justify;
 }
