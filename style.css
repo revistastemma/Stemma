@@ -2330,3 +2330,15 @@ em {
     padding-bottom: 0.35rem;
     border-bottom: 1px solid #d8c8c0;
 }
+/* =========================================================
+   ENVÍOS — NÚMEROS DE SECCIÓN GRANDES
+   ========================================================= */
+
+.article-page .section-label {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: -0.03em;
+    color: #9b2d30;
+}
