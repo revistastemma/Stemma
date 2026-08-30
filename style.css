@@ -2331,14 +2331,13 @@ em {
     border-bottom: 1px solid #d8c8c0;
 }
 /* =========================================================
-   ENVÍOS — NÚMEROS DE SECCIÓN GRANDES
+   ENVÍOS — PRUEBA DE TAMAÑO DE LOS NÚMEROS
    ========================================================= */
 
-.article-page .section-label {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 52px;
-    line-height: 1;
-    font-weight: normal;
-    letter-spacing: -0.03em;
-    color: #9b2d30;
+body.pagina-envios .section-label {
+    font-family: "EB Garamond", Georgia, serif !important;
+    font-size: 100px !important;
+    line-height: 0.8 !important;
+    font-weight: 400 !important;
+    letter-spacing: -3px !important;
 }
