@@ -2338,16 +2338,3 @@ em {
     letter-spacing: -0.04em !important;
     color: #9b2d30 !important;
 }
-
-.issue-sidebar {
-    background-color: #000 !important;
-    color: #fff;
-}
-
-.issue-sidebar a {
-    color: #fff !important;
-}
-
-.issue-sidebar .sidebar-label {
-    color: #fff !important;
-}
